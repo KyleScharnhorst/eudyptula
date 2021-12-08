@@ -1,0 +1,4 @@
+[ 3309.134499] hello_world: loading out-of-tree module taints kernel.
+[ 3309.134548] hello_world: module verification failed: signature and/or required key missing - tainting kernel
+[ 3309.135231] Hello world! Module has loaded.
+[ 3531.285199] Goodbye world. Module has cleaned up.
