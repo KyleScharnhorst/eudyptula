@@ -1,0 +1,3 @@
+Providing uname output as proof of booting the latest linux kernel.
+
+Copied the config used to compile the kernel.
