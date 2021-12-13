@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: GPL-2.0
+
 #include <linux/module.h>
 #include <linux/kernel.h>
 #include <linux/init.h>
@@ -8,13 +10,13 @@ MODULE_DESCRIPTION("Simple hello world kernel module.");
 
 static int __init hello_init(void)
 {
-        printk(KERN_INFO "Hello world! Module has loaded.\n");
-        return 0;
+	pr_info("Hello world! Module has loaded.\n");
+	return 0;
 }
 
 static void __exit hello_cleanup(void)
 {
-        printk("Goodbye world. Module has cleaned up.\n");
+	pr_info("Goodbye world. Module has cleaned up.\n");
 }
 
 module_init(hello_init);
