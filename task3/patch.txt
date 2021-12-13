@@ -1,0 +1,22 @@
+Adding "-eudyptula" to EXTRAVERSION in root Makefile.
+
+[kyles@DESKTOP-QS5DTLB task3]$ uname -r
+5.16.0-rc4-eudyptula
+
+dmesg output for additional boot proof:
+[    0.000000] Linux version 5.16.0-rc4-eudyptula (kyles@DESKTOP-QS5DTLB) (gcc (GCC) 11.2.1 20211203 (Red Hat 11.2.1-7), GNU ld version 2.37-10.fc35) #3 SMP PREEMPT Mon Dec 13 02:15:52 PST 2021
+[    0.000000] Command line: BOOT_IMAGE=(hd4,gpt3)/vmlinuz-5.16.0-rc4-eudyptula root=UUID=0b6e47d0-38cc-4380-8481-7704eab3d2ba ro rootflags=subvol=root rhgb quiet
+
+Signed-off-by: Kyle Scharnhorst <kyle.scharnhorst@gmail.com>
+
+--- /home/kyles/git/kernels/linux-5.16-rc4-eudyptula/Makefile.old	2021-12-13 02:37:57.591030461 -0800
++++ /home/kyles/git/kernels/linux-5.16-rc4-eudyptula/Makefile	2021-12-13 02:09:48.540280140 -0800
+@@ -2,7 +2,7 @@
+ VERSION = 5
+ PATCHLEVEL = 16
+ SUBLEVEL = 0
+-EXTRAVERSION = -rc4
++EXTRAVERSION = -rc4-eudyptula
+ NAME = Gobble Gobble
+ 
+ # *DOCUMENTATION*
